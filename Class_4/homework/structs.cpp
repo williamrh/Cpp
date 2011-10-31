@@ -21,14 +21,14 @@ int main() {
 	if ( !cin ) {
 	
 		cout << "\n" << "That isn't a number at all!" << endl;
-		// return EXIT_FAILURE;
+		return EXIT_FAILURE;
 	
 	}
 	
 	else if ( numStudents < 0 ) {
 	
 		cout << "\n" << "I am sorry to hear that! You must have a boring class" << endl;
-		// return EXIT_SUCCESS;
+		return EXIT_SUCCESS;
 	
 	}
 	
@@ -42,7 +42,7 @@ int main() {
 		cin.getline(name,256);
 
 		
-		// ClassArray[i].Name = name;
+		ClassArray[i].Name = name;
 
 
 		cout << "What is the Student's ID #? (Format MonthDay => 0517 )?: ";
@@ -53,7 +53,7 @@ int main() {
 		if ( ! cin ) {
 		
 			cout << "Please enter the student's ID as a their month and day of birth i.e. '0517'" << endl;
-			// return EXIT_FAILURE;
+			return EXIT_FAILURE;
 			
 		}
 
@@ -67,7 +67,7 @@ int main() {
 		if ( ! cin ) {
 		
 			cout << "Please enter the student's year as a normal string i.e. 'Freshman'" << endl;
-			// return EXIT_FAILURE;
+			return EXIT_FAILURE;
 			
 		}
 
@@ -75,7 +75,7 @@ int main() {
 	}
 
 
-	// return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 
 }
 
